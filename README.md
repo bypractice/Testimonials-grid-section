@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./testimonials-grid-screenshot.png)
 
 ### Links
 
