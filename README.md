@@ -38,4 +38,4 @@ Users should be able to:
 
 ### What I learned
 
-Still working on it, this is just a placeholder.
+Good practice on bento style grid structure.
