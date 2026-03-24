@@ -25,7 +25,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/bypractice/Testimonials-grid.git](https://github.com/bypractice/Testimonials-grid.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://bypractice.github.io/Testimonials-grid-section/](https://bypractice.github.io/Testimonials-grid-section/)
 
 
 ### Built with
