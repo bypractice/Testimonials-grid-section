@@ -1,0 +1,147 @@
+:root {
+--Purple_50: hsl(260, 100%, 95%);
+--Purple_300: hsl(264, 82%, 80%);
+--Purple_500: hsl(263, 55%, 52%);
+--White: hsl(0, 0%, 100%);
+--Grey_100: hsl(214, 17%, 92%);
+--Grey_200: hsl(0, 0%, 81%);
+--Grey_400: hsl(224, 10%, 45%);
+--Grey_500: hsl(217, 19%, 35%);
+--Dark_blue: hsl(219, 29%, 14%);
+--Black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: 'Barlow Semi';
+    src: url('../fonts/BarlowSemiCondensed-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Barlow Semi';
+    src: url('../fonts/BarlowSemiCondensed-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding: 4rem 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi', sans-serif;
+    background-color: var(--Grey_100);
+}
+
+.testimonials-container {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr;
+    width: min(100%, 23rem);
+    margin: 0 auto;
+    border-radius: 1.5em;
+}
+
+.card {
+    --card-bg: var(--White);
+    --card-text: var(--Grey_500);
+    --summary-text: var(--Grey_500);
+    --quote-text: var(--Grey_400);
+    --avatar-ring: transparent;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    box-shadow: 2rem 3.25rem 3.5rem -2rem rgb(72 85 106 / 30%);
+}
+
+.card--purple {
+    --card-bg: var(--Purple_500);
+    --card-text: var(--White);
+    --summary-text: var(--White);
+    --quote-text: var(--Purple_50);
+    --avatar-ring: var(--Purple_300);
+}
+
+.card--grey {
+    --card-bg: var(--Grey_500);
+    --card-text: var(--White);
+    --summary-text: var(--White);
+    --quote-text: var(--Grey_100);
+    --avatar-ring: transparent;
+}
+
+.card--white {
+    --card-bg: var(--White);
+    --card-text: var(--Grey_500);
+    --summary-text: var(--Grey_500);
+    --quote-text: var(--Grey_400);
+    --avatar-ring: transparent;
+}
+
+.card--dark {
+    --card-bg: var(--Dark_blue);
+    --card-text: var(--White);
+    --summary-text: var(--White);
+    --quote-text: var(--Grey_100);
+    --avatar-ring: var(--Purple_500);
+}
+
+.card .card-header {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    width: 100%;
+    margin-bottom: 1.25rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 40px;
+    height: auto;
+    border: 2px solid var(--avatar-ring);
+    object-fit: cover;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.user-info .name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: block;
+}
+
+.user-info .status {
+    margin: 0;
+    font-size: 0.8rem;
+    opacity: 0.5;
+    display: block;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card-summary {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--summary-text);
+}
+
+.card-quote {
+    font-size: 1.2rem;
+    margin: 0;
+    color: var(--quote-text);
+}
